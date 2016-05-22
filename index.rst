@@ -7,8 +7,8 @@ Initial Test for ReadTheDocs.org manual repo
    :align: center
    :alt: CubicSDR Introduction
 .. Building CubicSDR
-  build/linux 
-  build/windows
-  build/osx 
-  build/osx-homebrew 
+   build/linux 
+   build/windows
+   build/osx 
+   build/osx-homebrew 
 
