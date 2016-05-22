@@ -7,7 +7,7 @@ Initial Test for ReadTheDocs.org manual repo
    :align: center
    :alt: CubicSDR Introduction
 
-.. Building CubicSDR::
+.. tcctree::
    :maxdepth: 3
 
    build/linux 
