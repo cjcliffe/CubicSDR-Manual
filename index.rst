@@ -1,7 +1,8 @@
+=====================
 CubicSDR - The Manual
-----
+=====================
 
-Initial Test for ReadTheDocs.org manual repo
+Version 0.2.0 Documentation 
 
 .. figure:: CubicSDR-Intro.png
    :align: center
@@ -10,8 +11,11 @@ Initial Test for ReadTheDocs.org manual repo
 .. tcctree::
    :maxdepth: 3
 
-   build/linux 
-   build/windows
-   build/osx 
-   build/osx-homebrew 
+===============
+Building Guides
+===============
+
+*   :ref:`build-linux`
+*   :ref:`build-windows`
+*   :ref:`build-osx`
 
