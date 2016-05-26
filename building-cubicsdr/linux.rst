@@ -109,7 +109,7 @@ Support Modules
 ---------------
 
 SoapyRTLSDR
-
++++++++++++
 ::
 
 
@@ -127,7 +127,7 @@ SoapyRTLSDR
 
 
 SoapySDRPlay
-------------
+++++++++++++
 
 Note: requires API from http://sdrplay.com/linux.html to be installed first.
 ** Also note that the SoapySDRPlay installer will at present time install an earlier SoapySDR binary -- please re-run 'sudo make install' for your SoapySDR build folder to update to the build version after installing.
