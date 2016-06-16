@@ -17,7 +17,6 @@ Introduction
 
 What is CubicSDR ?
 ------------------
-
 CubicSDR is the software portion of *Software Defined Radio*. By Using hardware that converts RF spectrum into a digital stream we are able to build complex radios to do many types of functions in software instead of traditional hardwre.  
 
 
@@ -25,7 +24,13 @@ What can I do with CubicSDR ?
 -----------------------------
 Paired with a supported hardware receiver, you can use CubicSDR to explore the RF world around you. Discover Satellite transmissions, Amateur Radio, Rail, Areonautical, Shortwave, or any number of possible signals floating through the air.
 
+=========
+Downloads
+=========
 
+The latest release binaries for Linux, OSX and Windows can always be found on the GitHub releases page:
+
+* `CubicSDR Releases <https://www.github.com/cjcliffe/CubicSDR/releases>`
 
 ==================
 Supported Hardware
@@ -51,3 +56,10 @@ Building Guides
 *   :ref:`build-windows`
 *   :ref:`build-osx`
 
+=============================================
+Reporting an Issue or suggesting improvements
+=============================================
+
+If you would like to submit a bug report or idea for CubicSDR please use the GitHub issues page.
+
+* `GitHub Issues for CubicSDR <https://www.github.com/cjcliffe/CubicSDR/issues>`
