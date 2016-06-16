@@ -30,7 +30,7 @@ Downloads
 
 The latest release binaries for Linux, OSX and Windows can always be found on the GitHub releases page:
 
-* `CubicSDR Releases <https://www.github.com/cjcliffe/CubicSDR/releases>`
+* `CubicSDR Releases <https://www.github.com/cjcliffe/CubicSDR/releases>`_
 
 ==================
 Supported Hardware
@@ -62,4 +62,4 @@ Reporting an Issue or suggesting improvements
 
 If you would like to submit a bug report or idea for CubicSDR please use the GitHub issues page.
 
-* `GitHub Issues for CubicSDR <https://www.github.com/cjcliffe/CubicSDR/issues>`
+* `GitHub Issues for CubicSDR <https://www.github.com/cjcliffe/CubicSDR/issues>`_
