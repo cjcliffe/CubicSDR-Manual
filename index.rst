@@ -11,7 +11,7 @@ Version 0.2.0 Documentation
 .. _document_index:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Documentation Index
 
    introduction
