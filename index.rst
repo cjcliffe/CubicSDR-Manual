@@ -8,10 +8,10 @@ Version 0.2.0 Documentation
    :align: center
    :alt: CubicSDR Introduction
 
+.. _document_index:
+
 .. tcctree::
    :maxdepth: 3
-
-.. _basic-docs:
 
 .. toctree::
    :maxdepth: 2
@@ -36,7 +36,7 @@ Paired with a supported hardware receiver, you can use CubicSDR to explore the R
 Documentation Index
 ===================
 
-* :ref:`basic-docs`
+* :ref:`document_index`
 
 =========
 Downloads
