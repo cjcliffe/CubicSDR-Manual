@@ -10,13 +10,11 @@ Version 0.2.0 Documentation
 
 .. _document_index:
 
-.. tcctree::
-   :maxdepth: 3
-
 .. toctree::
    :maxdepth: 2
-   :caption: Basic Information
+   :caption: Documentation Index
 
+   index
    application-window
 
 ============
@@ -31,12 +29,6 @@ CubicSDR is the software portion of *Software Defined Radio*. By Using hardware 
 What can I do with CubicSDR ?
 -----------------------------
 Paired with a supported hardware receiver, you can use CubicSDR to explore the RF world around you. Discover Satellite transmissions, Amateur Radio, Rail, Areonautical, Shortwave, or any number of possible signals floating through the air.
-
-===================
-Documentation Index
-===================
-
-* :ref:`document_index`
 
 =========
 Downloads
