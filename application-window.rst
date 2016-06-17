@@ -10,49 +10,50 @@ CubicSDR - Main Application Window
    :maxdepth: 3
 
 
+---------------------
 Basic Feature Outline
-=====================
+---------------------
 
 Main Spectrum and Waterfall
----------------------------
+===========================
 
 Modem Spectrum and Waterfall
-----------------------------
+============================
 
 Tuning Bar
-----------
+==========
 
 Modulation Selector
--------------------
+===================
 
 Squelch
--------
+=======
 
 Audio Gain
-----------
+==========
 
 Peak Hold
----------
+==========
 
 Spectrum Averaging
-------------------
+==================
 
 Waterfall Speed
----------------
+===============
 
 Manual Gain
------------
+===========
 
 Status Display
---------------
+==============
 
 Solo
-----
+====
 
 Mute
-----
+====
 
 Delta Lock
-----------
+==========
 
 
