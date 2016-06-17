@@ -11,6 +11,13 @@ Version 0.2.0 Documentation
 .. tcctree::
    :maxdepth: 3
 
+.. _basic-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Basic Information
+
+   application-window
 
 ============
 Introduction
@@ -29,7 +36,7 @@ Paired with a supported hardware receiver, you can use CubicSDR to explore the R
 Documentation Index
 ===================
 
-*   :ref:`application-window`
+* :ref:`basic-docs`
 
 =========
 Downloads
