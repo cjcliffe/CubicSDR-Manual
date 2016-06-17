@@ -9,7 +9,7 @@ CubicSDR - Main Application Window
 .. tcctree::
    :maxdepth: 3
 
-=====================
+
 Basic Feature Outline
 =====================
 
