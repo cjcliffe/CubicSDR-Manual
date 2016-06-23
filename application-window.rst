@@ -27,6 +27,14 @@ Zooming is achieved by using the up and down arrow keys or the mouse wheel.  Hov
 
 While zooming, aliases from neighbouring signals can sometimes be observed as CubicSDR uses a fixed resolution FFT and a combination of scaling and decimation for zooming; adjusting the zoom distance or center frequency can alleviate these aliases if necessary and efforts will be made to elimante them in future releases.
 
+Visual Gain
+-----------
+Visual Gain can be adjusted by right clicking and dragging on the Main Spectrum; Visual Gain also affects the relative contrast in the Main Waterfall.
+
+Right-clicking once on the Main Spectrum will reset the current Visual Gain (and clear Peak Hold history)
+
+Pressing SHIFT and the UP / DOWN arrow keys will also fine-tune the Visual Gain.
+
 Tuning
 ------
 Basic center frequency tuning is achieved by dragging left or right on the main spectrum.  The left and right arrow keys can also be used for tuning; holding the shift key will accelerate the tuning keys.
@@ -83,7 +91,36 @@ Holding the SHIFT key while changing a tuning bar digit will prevent any carry-o
 Modulation Selector
 ===================
 
-The modulation selector allows you to change modulation type for the active modem.
+The modulation selector allows you to change modulation type for the active modem.  
+
+There are currently several analog modulation types available:
+
+* AM: Amplitude
+    * AM with carrier signal, Default 6KHz, Min 500Hz, Max 500KHz
+* FM: Frequency
+    * Default 200KHz bandwidth, Min 500Hz, Max 500KHz, Mono
+* FMS: Stereo Frequency
+    * Default 200KHz, Min 100KHz, Max 500KHz, Stereo (multiplex)
+* NBFM: Narrow-Band Frequency
+    * Default 12.5KHz, Min 500Hz, Max 500KHz, Mono
+* LSB: Lower-Side Band
+    * Lower-Side Band of AM (no carrier), Default 2.7KHz, Min 250Hz, Max 250KHz
+* USB: Upper-Side Band 
+    * Upper-Side Band of AM (no carrier), Default 2.7KHz, Min 250Hz, Max 250KHz
+* DSB: Dual-Side Band
+    * Same as AM but without carrier signal, Default 5.4KHz, Min 500Hz, Max 500KHz
+* I/Q: Raw I/Q Pass-Thru (No Modulation)
+    * Raw I/Q samples that would normally go to a modem are passed through to the sound card for use elsewhere.  Bandwidth is fixed to the selected sound card output frequency and will change along with it.  Note that turning the Audio Gain down to a low level will disable gain completely and output the raw decimated samples. 
+
+Digital modes are a work-in-progress but will be available in future versions.
+
+There are additional keys available for controlling the active modem's modulation selection:
+
+* 'A' will select AM.
+* 'F' will cycle between FM, FMS and NBFM.
+* 'L' will select LSB.
+* 'U' will select USB.
+
 
 Squelch
 =======
@@ -102,29 +139,31 @@ Peak Hold
 
 Activating Peak Hold will keep a maximum level history for the main and modem spectrum. 
 
-Adjusting frequency or right-clicking the spectrum will reset the current Peak Hold history.
+Adjusting frequency or right-clicking the spectrum will reset the current Peak Hold history (and Visual Gain).
+
+Pressing 'P' will also toggle the Peak Hold button.
 
 Spectrum Averaging
 ==================
 
-Spectrum averaging speed can be adjusted with the meter to the right of the main spectrum.
+Spectrum averaging speed can be adjusted by clicking / dragging the meter to the right of the main spectrum.  Mouse wheel can also be used. 
 
 Waterfall Speed
 ===============
 
-Waterfall speed can be adjusted from 1 to 1024 lines per second with the meter to the right of the main waterfall.
+Waterfall speed can be adjusted from 1 to 1024 lines per second by clicking / dragging the meter to the right of the main waterfall.  Mouse wheel can also be used.
 
 Waterfall history will continue to be collected and rendered at the desired rate while minimized; reducing speed before minimizing will reduce CPU load for this task.
 
 Manual Gain
 ===========
 
-If Automatic Gain is deactivated the Manual Gain sliders will appear.  Available gain levels can be adjusted by clicking or using the mouse wheel on the desired meter.
+If Automatic Gain is deactivated the Manual Gain sliders will appear.  Available gain levels can be adjusted by clicking/dragging or using the mouse wheel on the desired meter.
 
 Status Display
 ==============
 
-While hovering the Status Display will display relevant tips to the currently hovered UI element or action.
+While hovering the Status Display will display relevant tips to the currently hovered UI element or action.  Hover Tips are also enabled by default but can be disabled in the Settings menu.
 
 Solo
 ====
@@ -133,11 +172,12 @@ Enabling the Solo feature will mute all except the active modem.  Selecting anot
 
 Solo mode is useful when you have many modems and want to focus on a particular one.  Focus to the next and previous modem can be achieved with TAB and SHIFT-TAB on the keyboard.
 
+Pressing the 'S' key will also toggle Solo Mode for the active modem.
 
 Mute
 ====
 
-The Mute button shows the current mute state of the active modem and can be used to toggle it.  The 'M' key can also be used to toggle mute.
+The Mute button shows the current mute state of the active modem and can be used to toggle it.  The 'M' key can also be used to toggle mute for the active modem.
 
 Delta Lock
 ==========
@@ -147,3 +187,16 @@ The Delta Lock button shows the current delta lock state of the active modem and
 When a modem is delta-locked it will remain at a fixed frequency relative to the center frequency.   This allows you to tune freely without changing the relative modem position.
 
 The delta lock feature is useful in conjunction with sessions for creating band-plan relative set-ups.  Changing bands via the center frequency won't alter the active modem setup.
+
+Pressing the 'V' key will also toggle Delta Lock Mode for the active modem.
+
+
+Direct Input
+============
+
+Most numeric controls (speeds, levels, frequencies) in the CubicSDR application window can be entered directly on the keyboard.  Hover over the desired value and press SPACE to open the input dialog; or just start typing a number and the dialog will appear automatically.
+
+Pressing SPACE or typing a digit when not hovered over anything will open the Direct Input dialog for the Center Frequency.
+
+For frequencies, Direct Input will also accept suffixes 'Hz', 'Mhz', 'KHz' and 'GHz' and will attempt to use the best suffix when presenting the existing frequency.  If no suffix is used it will be assumed to be in MHz unless the value is greater than 3000, which will then default to Hz. 
+
