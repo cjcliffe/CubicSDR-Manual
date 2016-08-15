@@ -56,7 +56,7 @@ From the prompt:
 
 ::
 
-   C:\> cd C:\MSVCDev\
+   C:\> cd C:\MSVCDev
    C:\MSVCDEV> cmake --build SoapySDR_win64 --config Release --target install
    ... Bunch of building ...
        0 Error(s)
@@ -87,7 +87,7 @@ Configure variables to indicate CubicSDR that modules files will be searched in 
 *    Configure again, all should be good, then Generate.
 *    Navigate to C:\\MSVCDev\\CubicSDR_win64\\ in explorer and open CubicSDR.sln.
 *    Once open select "Release" and "x64" build configuration and then "Build Solution" (F6)
-*    CubicSDR.exe should now be in the output folder (i.e. C:\MSVCDev\CubicSDR_win64\x64) and ready to run (minus support modules).
+*    CubicSDR.exe should now be in the output folder (i.e. C:\\MSVCDev\\CubicSDR_win64\\x64) and ready to run (minus support modules).
 
 Build Support Modules
 =====================
