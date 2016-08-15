@@ -4,7 +4,7 @@
 Building CubicSDR on Windows
 ============================
 
-Windows 8.1/10, Visual Studio 64-bit: -- improvements welcome.
+Windows7/Windows 8.1/10, Visual Studio 64-bit: -- improvements welcome.
 
 
 Install Visual Studio Community 2015
@@ -36,9 +36,9 @@ For this guide I've used:
 
 ::
 
-    https://cmake.org/files/v3.4/cmake-3.4.0-rc3-win32-x86.exe
+    https://cmake.org/files/v3.6/cmake-3.6.1-win64-x64.msi
 
-Just install CMake with default or preferred options.
+As recommended, uninstall the older CMake version first if present, then just install CMake with default or preferred options.
 
 Install SoapySDR
 ----------------
@@ -77,6 +77,12 @@ Build CubicSDR:
 *    Click Configure.
 *    Choose "Visual Studio 14 2015 Win64" and Finish.
 *    Set wxWidgets_ROOT_DIR to "C:\MSVCDev\wxWidgets-3.1.0".
+*    Set wxWidgets_LIB_DIR to "C:\MSVCDev\wxWidgets-3.1.0\lib\vc_x64_lib".
++Configure variables to indicate CubicSDR that modules files will be searched in the `[CubicSDR executable path]\modules` directory:
+
+*    Set BUILD_INSTALLER to 1 (selected)
+*    Set BUNDLE_SOAPY_MODS to 1 (selected)
+*    Set BUNDLE_MODS_ONLY to 1 (selected)
 *    Configure again, all should be good, then Generate.
 *    Navigate to C:\MSVCDev\CubicSDR_win64\ in explorer and open CubicSDR.sln.
 *    Once open select "Release" and "x64" build configuration and then "Build Solution" (F6)
@@ -110,6 +116,8 @@ From the prompt:
    ... Bunch of building ...
        0 Error(s)
 
+Copy the generated module file `rtlsdrSupport.dll` in the C:\MSVCDev\CubicSDR_win64\x64\modules directory where CubicSDR can find it.
+       
 SoapySDRPlay
 ------------
 
@@ -180,6 +188,6 @@ From the prompt:
    ... Bunch of building ...
        0 Error(s)
 
-
+Copy the generated module file `sdrPlaySupport.dll` in the C:\MSVCDev\CubicSDR_win64\x64\modules directory where CubicSDR can find it.
 
 
