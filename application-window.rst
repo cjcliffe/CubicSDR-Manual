@@ -75,6 +75,14 @@ The modem spectrum and waterfall can be used just like the main waterfall with t
 
 These views show the spectrum and waterfall from the signal feed to the active modem; this is a channelized feed from the main input and can sometimes show neighbouring artifacts from nearby channels.
 
+Modem Properties
+================
+
+The modem properties are used to configure things relevant to the active modem.  
+
+All modems have the following basic properties, other options may be available depending on the modem type:
+
+* "Audio Out" can be configured per-modem; each modem can be routed to any available audio output. 
 
 Tuning Bar
 ==========
@@ -101,6 +109,8 @@ There are currently several analog modulation types available:
     * Default 200KHz bandwidth, Min 500Hz, Max 500KHz, Mono
 * FMS: Stereo Frequency
     * Default 200KHz, Min 100KHz, Max 500KHz, Stereo (multiplex)
+    * Properties:
+        * De-emphasis: set the de-emphasis to balance the bass and treble to intended ranges (default 75us)
 * NBFM: Narrow-Band Frequency
     * Default 12.5KHz, Min 500Hz, Max 500KHz, Mono
 * LSB: Lower-Side Band
@@ -126,6 +136,8 @@ Squelch
 =======
 
 The Squelch meter display the active signal level; to set squelch click or drag the meter to the desired trigger point.  Right-clicking the squelch meter will set it just above the current signal level.
+
+Visible squelch floor and ceiling will be adjusted dynamically in an attempt to keep the relevant signal area in view.  The set squelch level may also move with the signal when it changes but it remains at the same value.
 
 Audio Gain
 ==========
@@ -171,6 +183,8 @@ Solo
 Enabling the Solo feature will mute all except the active modem.  Selecting another modem will change the Solo focus. 
 
 Solo mode is useful when you have many modems and want to focus on a particular one.  Focus to the next and previous modem can be achieved with TAB and SHIFT-TAB on the keyboard.
+
+If modems are squelched while in Solo Mode the modem that breaks squelch will be focused and held for the duration of the squelch break.
 
 Pressing the 'S' key will also toggle Solo Mode for the active modem.
 
