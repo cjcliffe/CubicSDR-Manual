@@ -40,9 +40,9 @@ CubicSDR relies on SoapySDR modules from Pothosware for hardware support.  Curre
 Building Guides
 ---------------
 
-*   :ref:`build-linux`
-*   :ref:`build-windows`
-*   :ref:`build-osx`
+* `Linux <https://github.com/cjcliffe/CubicSDR/wiki/Build-Linux>`_.
+* `OSX <https://github.com/cjcliffe/CubicSDR/wiki/Build-OSX>`_.
+* `Windows <https://github.com/cjcliffe/CubicSDR/wiki/Build-Windows>`_.
 
 ---------------------------------------------
 Reporting an Issue or suggesting improvements
