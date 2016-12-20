@@ -26,23 +26,23 @@ Supported Hardware
 
 CubicSDR relies on SoapySDR modules from Pothosware for hardware support.  Currently SoapySDR has:
 
-* `BladeRF <https://github.com/pothosware/SoapyBladeRF>`_.
-* `Osmo Devices  <https://github.com/pothosware/SoapyOsmo>`_.
-* `RTLSDR <https://github.com/pothosware/SoapyRTLSDR>`_.
-* `SDRPlay  <https://github.com/pothosware/SoapySDRPlay>`_.
-* `HackRF  <https://github.com/pothosware/SoapyHackRF>`_.
-* `RedPitya  <https://github.com/pothosware/SoapyRedPitaya>`_.
-* `Airspy <https://github.com/pothosware/SoapyAirspy>`_.
-* `UHD Devices  <https://github.com/pothosware/SoapyUHD>`_.
-* `Remote TCP  <https://github.com/pothosware/SoapyRemote>`_.
+* `BladeRF <https://github.com/pothosware/SoapyBladeRF>`_
+* `Osmo Devices  <https://github.com/pothosware/SoapyOsmo>`_
+* `RTLSDR <https://github.com/pothosware/SoapyRTLSDR>`_
+* `SDRPlay  <https://github.com/pothosware/SoapySDRPlay>`_
+* `HackRF  <https://github.com/pothosware/SoapyHackRF>`_
+* `RedPitya  <https://github.com/pothosware/SoapyRedPitaya>`_
+* `Airspy <https://github.com/pothosware/SoapyAirspy>`_
+* `UHD Devices  <https://github.com/pothosware/SoapyUHD>`_
+* `Remote TCP  <https://github.com/pothosware/SoapyRemote>`_
 
 ---------------
 Building Guides
 ---------------
 
-* `Linux <https://github.com/cjcliffe/CubicSDR/wiki/Build-Linux>`_.
-* `OSX <https://github.com/cjcliffe/CubicSDR/wiki/Build-OSX>`_.
-* `Windows <https://github.com/cjcliffe/CubicSDR/wiki/Build-Windows>`_.
+* `Linux <https://github.com/cjcliffe/CubicSDR/wiki/Build-Linux>`_
+* `OSX <https://github.com/cjcliffe/CubicSDR/wiki/Build-OSX>`_
+* `Windows <https://github.com/cjcliffe/CubicSDR/wiki/Build-Windows>`_
 
 ---------------------------------------------
 Reporting an Issue or suggesting improvements
