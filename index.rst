@@ -16,4 +16,4 @@ Version 0.2.0 Documentation
 
    introduction
    application-window
-
+   practical-applications
