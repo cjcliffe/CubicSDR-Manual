@@ -29,7 +29,7 @@ While zooming, aliases from neighbouring signals can sometimes be observed as Cu
 
 Visual Gain
 -----------
-Visual Gain can be adjusted by right clicking and dragging on the Main Spectrum; Visual Gain also affects the relative contrast in the Main Waterfall.
+Visual Gain can be adjusted by right clicking and dragging on either the Main Spectrum or Waterfall; Visual Gain also affects the relative contrast in the Main Waterfall.
 
 Right-clicking once on the Main Spectrum will reset the current Visual Gain (and clear Peak Hold history)
 
