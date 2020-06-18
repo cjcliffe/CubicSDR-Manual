@@ -8,8 +8,9 @@ Tuning in NOAA stations
 
 There are a few quick ways to tell if your setup is working properly. 
 Nothing beats getting some useful weather data while you're at it.  To get
-started, head over to http://www.nws.noaa.gov/nwr/coverage/station_listing.html
-and find your local weather station frequency.
+started, head over to https://www.weather.gov/nwr/ for information on the service
+and the common frequencies used.  The "Coverage" tab can be used to drill down to
+a local station frequency.
 
 To get started, find your "Modulation Selector" in the upper
 left side of the display.  NOAA broadcasts in Narrow Band FM or NBFM, so go
