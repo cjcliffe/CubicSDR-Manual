@@ -47,7 +47,7 @@ If there's currently no modem in range, hovering and clicking on the waterfall w
 
 There is currently no limit on the number of modems that can be added other than the available CPU and Memory resources.  
 
-Note that modems that move out of center frequency range will deactivate and re-activate later when you return to their range.
+Note that modems that move out of center frequency range will deactivate and reactivate later when you return to their range.
 
 Interacting with a Modem on the Main Waterfall
 ----------------------------------------------
@@ -82,7 +82,7 @@ The modem properties are used to configure things relevant to the active modem.
 
 All modems have the following basic properties, other options may be available depending on the modem type:
 
-* "Audio Out" can be configured per-modem; each modem can be routed to any available audio output. 
+* "Audio Out" can be configured per modem; each modem can be routed to any available audio output. 
 
 Tuning Bar
 ==========
@@ -103,21 +103,21 @@ The modulation selector allows you to change modulation type for the active mode
 
 There are currently several analog modulation types available:
 
-* AM: Amplitude
+* AM: Amplitude Modulation
     * AM with carrier signal, Default 6 kHz, Min 500 Hz, Max 500 kHz
-* FM: Frequency
+* FM: Frequency Modulation
     * Default 200 kHz bandwidth, Min 500 Hz, Max 500 kHz, Mono
-* FMS: Stereo Frequency
+* FMS: Stereo Frequency Modulation
     * Default 200 kHz, Min 100 kHz, Max 500 kHz, Stereo (multiplex)
     * Properties:
         * De-emphasis: set the de-emphasis to balance the bass and treble to intended ranges (default 75us)
-* NBFM: Narrow-Band Frequency
+* NBFM: Narrow-Band Frequency Modulation
     * Default 12.5 kHz, Min 500 Hz, Max 500 kHz, Mono
-* LSB: Lower-Side Band
-    * Lower-Side Band of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
-* USB: Upper-Side Band 
-    * Upper-Side Band of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
-* DSB: Dual-Side Band
+* LSB: Lower SideBand
+    * Lower SideBand of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
+* USB: Upper SideBand 
+    * Upper SideBand of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
+* DSB: Dual SideBand
     * Same as AM but without carrier signal, Default 5.4 kHz, Min 500 Hz, Max 500 kHz
 * I/Q: Raw I/Q Pass-Thru (No Modulation)
     * Raw I/Q samples that would normally go to a modem are passed through to the sound card for use elsewhere.  Bandwidth is fixed to the selected sound card output frequency and will change along with it.  Note that turning the Audio Gain down to a low level will disable gain completely and output the raw decimated samples. 
@@ -144,7 +144,7 @@ Audio Gain
 
 By default CubicSDR will attempt to normalize the output from all active modems; if you want to adjust the gain of one modem versus another or enhance the automatic gain performance of an amplitude modulated signal you can use the audio gain to adjust the level.
 
-When using I/Q modulation dragging the gain to a low level will de-activate any automatic gain applied and output the original decimated signal input.
+When using I/Q modulation dragging the gain to a low level will deactivate any automatic gain applied and output the original decimated signal input.
 
 Peak Hold
 ==========
