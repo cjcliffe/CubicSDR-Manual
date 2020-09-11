@@ -89,7 +89,7 @@ Tuning Bar
 
 The tuning bar provides a simple way to control the active modem frequency, bandwidth and the center frequency.
 
-Right-clicking a modem frequency digit will enable Frequency Snap.  The snapped digit will be bordered in red; any drags, clicks or new modem frequencies will not tune digits below the snapped one.  Additionally nudging the active modem with '[' and ']' will follow the snap value.  To disable snapping, right-click the digit again or right-click the 1Hz increment digit.  
+Right-clicking a modem frequency digit will enable Frequency Snap.  The snapped digit will be bordered in red; any drags, clicks or new modem frequencies will not tune digits below the snapped one.  Additionally nudging the active modem with '[' and ']' will follow the snap value.  To disable snapping, right-click the digit again or right-click the 1 Hz increment digit.  
 
 Any of the values on the tuning bar can be adjusted in single steps by clicking the upper or lower portion of a digit.  Additionally you can use the mouse wheel while hovered over a digit or drag it left or right to change value.  
 
@@ -104,21 +104,21 @@ The modulation selector allows you to change modulation type for the active mode
 There are currently several analog modulation types available:
 
 * AM: Amplitude
-    * AM with carrier signal, Default 6kHz, Min 500Hz, Max 500kHz
+    * AM with carrier signal, Default 6 kHz, Min 500 Hz, Max 500 kHz
 * FM: Frequency
-    * Default 200kHz bandwidth, Min 500Hz, Max 500kHz, Mono
+    * Default 200 kHz bandwidth, Min 500 Hz, Max 500 kHz, Mono
 * FMS: Stereo Frequency
-    * Default 200kHz, Min 100kHz, Max 500kHz, Stereo (multiplex)
+    * Default 200 kHz, Min 100 kHz, Max 500 kHz, Stereo (multiplex)
     * Properties:
         * De-emphasis: set the de-emphasis to balance the bass and treble to intended ranges (default 75us)
 * NBFM: Narrow-Band Frequency
-    * Default 12.5kHz, Min 500Hz, Max 500kHz, Mono
+    * Default 12.5 kHz, Min 500 Hz, Max 500 kHz, Mono
 * LSB: Lower-Side Band
-    * Lower-Side Band of AM (no carrier), Default 2.7kHz, Min 250Hz, Max 250kHz
+    * Lower-Side Band of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
 * USB: Upper-Side Band 
-    * Upper-Side Band of AM (no carrier), Default 2.7kHz, Min 250Hz, Max 250kHz
+    * Upper-Side Band of AM (no carrier), Default 2.7 kHz, Min 250 Hz, Max 250 kHz
 * DSB: Dual-Side Band
-    * Same as AM but without carrier signal, Default 5.4kHz, Min 500Hz, Max 500kHz
+    * Same as AM but without carrier signal, Default 5.4 kHz, Min 500 Hz, Max 500 kHz
 * I/Q: Raw I/Q Pass-Thru (No Modulation)
     * Raw I/Q samples that would normally go to a modem are passed through to the sound card for use elsewhere.  Bandwidth is fixed to the selected sound card output frequency and will change along with it.  Note that turning the Audio Gain down to a low level will disable gain completely and output the raw decimated samples. 
 
