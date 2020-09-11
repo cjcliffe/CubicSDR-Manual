@@ -1,4 +1,4 @@
-==================================
+!==================================
 CubicSDR - Main Application Window
 ==================================
 
@@ -25,7 +25,7 @@ Zooming
 -------
 Zooming is achieved by using the up and down arrow keys or the mouse wheel.  Hovering on the spectrum or waterfall will target a particular frequency during zoom.
 
-While zooming, aliases from neighbouring signals can sometimes be observed as CubicSDR uses a fixed resolution FFT and a combination of scaling and decimation for zooming; adjusting the zoom distance or center frequency can alleviate these aliases if necessary and efforts will be made to elimante them in future releases.
+While zooming, aliases from neighbouring signals can sometimes be observed as CubicSDR uses a fixed resolution FFT and a combination of scaling and decimation for zooming; adjusting the zoom distance or center frequency can alleviate these aliases if necessary and efforts will be made to eliminate them in future releases.
 
 Visual Gain
 -----------
@@ -53,7 +53,7 @@ Interacting with a Modem on the Main Waterfall
 ----------------------------------------------
 Clicking a modem will make it the active modem.  The active modem will appear highlighted, it will also appear red when hovering elsewhere to indicate that it's the modem that will be affected by the next action.  
 
-Hovering a modem and dragging from it's center will change it's frequency.  Dragging the edge of a modem will change it's bandwidth.  You can also use the Tuning Bar to adjust the active modem's frequency and bandwidth.
+Hovering a modem and dragging from its center will change its frequency.  Dragging the edge of a modem will change its bandwidth.  You can also use the Tuning Bar to adjust the active modem's frequency and bandwidth.
 
 When selected the active modem will be reflected in the Modem Spectrum, Modem Waterfall, Squelch, Audio Gain, Mute, Tuner Bar Frequency and anywhere else that is related to the active modem.
 
@@ -89,7 +89,7 @@ Tuning Bar
 
 The tuning bar provides a simple way to control the active modem frequency, bandwidth and the center frequency.
 
-Right-clicking a modem frequency digit will enable Frequency Snap.  The snapped digit will be bordered in red; any drags, clicks or new modem frequencies will not tune digits below the snapped one.  Additionally nudging the active modem with '[' and ']' will follow the snap value.  To disable snapping, right-click the digit again or right-click the 1hz increment digit.  
+Right-clicking a modem frequency digit will enable Frequency Snap.  The snapped digit will be bordered in red; any drags, clicks or new modem frequencies will not tune digits below the snapped one.  Additionally nudging the active modem with '[' and ']' will follow the snap value.  To disable snapping, right-click the digit again or right-click the 1Hz increment digit.  
 
 Any of the values on the tuning bar can be adjusted in single steps by clicking the upper or lower portion of a digit.  Additionally you can use the mouse wheel while hovered over a digit or drag it left or right to change value.  
 
@@ -104,21 +104,21 @@ The modulation selector allows you to change modulation type for the active mode
 There are currently several analog modulation types available:
 
 * AM: Amplitude
-    * AM with carrier signal, Default 6KHz, Min 500Hz, Max 500KHz
+    * AM with carrier signal, Default 6kHz, Min 500Hz, Max 500kHz
 * FM: Frequency
-    * Default 200KHz bandwidth, Min 500Hz, Max 500KHz, Mono
+    * Default 200kHz bandwidth, Min 500Hz, Max 500kHz, Mono
 * FMS: Stereo Frequency
-    * Default 200KHz, Min 100KHz, Max 500KHz, Stereo (multiplex)
+    * Default 200kHz, Min 100kHz, Max 500kHz, Stereo (multiplex)
     * Properties:
         * De-emphasis: set the de-emphasis to balance the bass and treble to intended ranges (default 75us)
 * NBFM: Narrow-Band Frequency
-    * Default 12.5KHz, Min 500Hz, Max 500KHz, Mono
+    * Default 12.5kHz, Min 500Hz, Max 500kHz, Mono
 * LSB: Lower-Side Band
-    * Lower-Side Band of AM (no carrier), Default 2.7KHz, Min 250Hz, Max 250KHz
+    * Lower-Side Band of AM (no carrier), Default 2.7kHz, Min 250Hz, Max 250kHz
 * USB: Upper-Side Band 
-    * Upper-Side Band of AM (no carrier), Default 2.7KHz, Min 250Hz, Max 250KHz
+    * Upper-Side Band of AM (no carrier), Default 2.7kHz, Min 250Hz, Max 250kHz
 * DSB: Dual-Side Band
-    * Same as AM but without carrier signal, Default 5.4KHz, Min 500Hz, Max 500KHz
+    * Same as AM but without carrier signal, Default 5.4kHz, Min 500Hz, Max 500kHz
 * I/Q: Raw I/Q Pass-Thru (No Modulation)
     * Raw I/Q samples that would normally go to a modem are passed through to the sound card for use elsewhere.  Bandwidth is fixed to the selected sound card output frequency and will change along with it.  Note that turning the Audio Gain down to a low level will disable gain completely and output the raw decimated samples. 
 
@@ -212,5 +212,5 @@ Most numeric controls (speeds, levels, frequencies) in the CubicSDR application 
 
 Pressing SPACE or typing a digit when not hovered over anything will open the Direct Input dialog for the Center Frequency.
 
-For frequencies, Direct Input will also accept suffixes 'Hz', 'Mhz', 'KHz' and 'GHz' and will attempt to use the best suffix when presenting the existing frequency.  If no suffix is used it will be assumed to be in MHz unless the value is greater than 3000, which will then default to Hz. 
+For frequencies, Direct Input will also accept suffixes 'Hz', 'mHz', 'kHz' and 'gHz' and will attempt to use the best suffix when presenting the existing frequency.  If no suffix is used it will be assumed to be in mHz unless the value is greater than 3000, which will then default to Hz. 
 
